@@ -1,0 +1,81 @@
+body {
+  --black-color: 0, 0, 0;
+}
+
+.vue-dropdown {
+  position: relative;
+  width: fit-content;
+
+  .bg {
+    box-shadow: 0 6px 12px RGB(var(--black-color), 0.18);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    position: absolute;
+    border-radius: 4px;
+    max-height: 400px;
+    min-width: 300px;
+    z-index: 1000;
+    overflow: auto;
+    width: 100%;
+  }
+  .vue-main-btn:hover {
+    background: #e1e1e1;
+  }
+  .vue-main-btn {
+    border: 0.5px solid #ccc;
+    background: white;
+    width: 100%;
+    min-height: 40px;
+    text-align: center;
+    color: #35495e;
+    min-width: 300px;
+    font-size: 17px;
+    cursor: pointer;
+    height: 2.5rem;
+  }
+  .search-container {
+    margin: 5px 0;
+  }
+
+  .item-flex {
+    display: flex;
+  }
+  .hide {
+    display: none;
+  }
+  .pointer {
+    cursor: pointer;
+  }
+  .pointer:hover {
+    color: white;
+    background: #41b883;
+  }
+  .selected {
+    background: #e1e1e1;
+  }
+  .disabled {
+    color: #ccc;
+  }
+  p {
+    text-align: left;
+    padding: 0.5em;
+    margin: 0;
+  }
+  label {
+    text-align: left;
+    margin-left: 5px;
+    width: 100%;
+  }
+  .vue-search {
+    border-width: 0 0 2px;
+    border-color: #ccc;
+    font-style: italic;
+    margin: 5px 10px;
+    height: 1.75em;
+    width: 90%;
+    outline: 0;
+  }
+  .vue-search::placeholder {
+    text-align: center;
+  }
+}
